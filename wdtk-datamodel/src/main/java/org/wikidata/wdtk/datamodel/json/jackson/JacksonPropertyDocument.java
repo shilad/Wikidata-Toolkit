@@ -31,6 +31,7 @@ import org.wikidata.wdtk.datamodel.interfaces.PropertyDocument;
 import org.wikidata.wdtk.datamodel.interfaces.PropertyIdValue;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
@@ -104,11 +105,6 @@ public class JacksonPropertyDocument extends JacksonTermedDocument implements
 	@Override
 	public DatatypeIdValue getDatatype() {
 		return new JacksonDatatypeId(this.datatype);
-	}
-
-	@Override
-	public String getJsonType() {
-		return JacksonTermedDocument.JSON_TYPE_PROPERTY;
 	}
 
 	@Override
