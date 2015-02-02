@@ -20,7 +20,6 @@ package org.wikidata.wdtk.datamodel.json.jackson;
  * #L%
  */
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.wikidata.wdtk.datamodel.helpers.Datamodel;
 import org.wikidata.wdtk.datamodel.helpers.Equality;
 import org.wikidata.wdtk.datamodel.helpers.Hash;
@@ -44,8 +43,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  *
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class JacksonPropertyDocument extends JacksonTermedDocument implements
-		PropertyDocument {
+public class JacksonPropertyDocument extends JacksonTermedStatementDocument
+		implements PropertyDocument {
 
 	/**
 	 * Datatype string as used in JSON. See {@link JacksonDatatypeId} for a
