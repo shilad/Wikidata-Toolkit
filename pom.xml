@@ -4,7 +4,7 @@
 
 	<groupId>org.wikibrainapi</groupId>
 	<artifactId>wdtk-parent</artifactId>
-	<version>0.3.3.shilad</version>
+	<version>0.3.4.shilad</version>
 	<packaging>pom</packaging>
 
 	<name>Wikidata Toolkit</name>
